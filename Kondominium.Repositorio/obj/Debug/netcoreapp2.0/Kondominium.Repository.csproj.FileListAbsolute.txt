@@ -1,0 +1,23 @@
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.deps.json
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.dll
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.csprojResolveAssemblyReference.cache
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.csproj.CoreCompileInputs.cache
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.AssemblyInfoInputs.cache
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.AssemblyInfo.cs
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.pdb
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Domain.dll
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Domain.pdb
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.dll
+C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.pdb
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.deps.json
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.dll
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Repository.pdb
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Domain.dll
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\Kondominium.Domain.pdb
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.csprojResolveAssemblyReference.cache
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.csproj.CoreCompileInputs.cache
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.AssemblyInfoInputs.cache
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.AssemblyInfo.cs
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.dll
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\obj\Debug\netcoreapp2.0\Kondominium.Repository.pdb
+C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium.Repositorio\bin\Debug\netcoreapp2.0\appsettings.json
