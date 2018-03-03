@@ -1,5 +1,5 @@
 ﻿using Kondominium.Domain.CommandsModels.Condominio;
-using Kondominium.Domain.Interfaces.Commands;
+
 using Kondominium.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Kondominium.Domain.CommandsServices
 {
-    public class CondominioListService : ICommandList<CondominioListarCommand>
+    public class CondominioListService
     {
         private readonly ICondominioRepository _condominioRepository;
 

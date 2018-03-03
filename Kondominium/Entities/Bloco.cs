@@ -7,13 +7,13 @@ namespace Kondominium.Domain.Entities
     public class Bloco : EnitidadeBase
     {
         public string Nome { get; set; }
-
+        public int CondominioId { get; set; }
         public Condominio Condominio { get; set; }
         
-        public Bloco(string nome, Condominio condominio)
+        public Bloco(string nome, int condominioId)
         {
             Nome = nome;
-            Condominio = condominio;
+            CondominioId = condominioId;
         }
 
         public Bloco()

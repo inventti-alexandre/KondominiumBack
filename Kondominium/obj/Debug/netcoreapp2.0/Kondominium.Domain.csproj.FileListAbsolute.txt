@@ -10,7 +10,6 @@ C:\Users\KaioRamonWin8\Documents\Visual Studio 2017\Projects\Kondominium\Kondomi
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\bin\Debug\netcoreapp2.0\Kondominium.Domain.deps.json
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\bin\Debug\netcoreapp2.0\Kondominium.Domain.dll
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\bin\Debug\netcoreapp2.0\Kondominium.Domain.pdb
-C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\obj\Debug\netcoreapp2.0\Kondominium.Domain.csprojResolveAssemblyReference.cache
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\obj\Debug\netcoreapp2.0\Kondominium.Domain.csproj.CoreCompileInputs.cache
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\obj\Debug\netcoreapp2.0\Kondominium.Domain.AssemblyInfoInputs.cache
 C:\Users\KaioRamonWin8\Documents\GitHub\KondominiumBack\Kondominium\obj\Debug\netcoreapp2.0\Kondominium.Domain.AssemblyInfo.cs

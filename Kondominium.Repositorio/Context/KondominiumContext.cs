@@ -30,7 +30,7 @@ namespace Kondominium.RepositoryBase.Context
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
-
+            
             optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         }
     }

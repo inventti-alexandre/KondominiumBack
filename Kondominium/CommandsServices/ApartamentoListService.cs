@@ -1,5 +1,4 @@
 ﻿using Kondominium.Domain.CommandsModels.Apartamento;
-using Kondominium.Domain.Interfaces.Commands;
 using Kondominium.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ using System.Linq;
 
 namespace Kondominium.Domain.CommandsServices
 {
-    public class ApartamentoListService : ICommandList<ApartamentoListarCommand>
+    public class ApartamentoListService 
     {
         private readonly IApartamentoRepository _apartamentoRepository;
 

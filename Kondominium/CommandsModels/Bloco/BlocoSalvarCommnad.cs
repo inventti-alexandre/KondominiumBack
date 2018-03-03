@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Kondominium.Domain.CommandsModels.Bloco
 {
-    public class BlocoSaveCommnad
+    public class BlocoSalvarCommnad
     {
         public string Nome { get; set; }
         public int IdCondominio { get; set; }
 
-        public BlocoSaveCommnad(string nome, int idCondominio)
+        public BlocoSalvarCommnad(string nome, int idCondominio)
         {
             Nome = nome;
             IdCondominio = idCondominio;

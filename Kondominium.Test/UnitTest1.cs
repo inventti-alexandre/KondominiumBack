@@ -1,3 +1,4 @@
+using Kondominium.Domain.CommandsModels.Bloco;
 using Kondominium.Domain.CommandsModels.Condominio;
 using Kondominium.Domain.CommandsServices;
 using Kondominium.RepositoryBase.Context;
@@ -11,15 +12,16 @@ namespace Kondominium.Test
     {
         private KondominiumContext context = null;
         private CondominioSaveService condominioService = null;
+        private BlocoSaveService blocoService = null;
 
         public UnitTest1()
         {
-            context = new KondominiumContext();
-            condominioService = new CondominioSaveService(new CondominioRepository(context));
+            condominioService = new CondominioSaveService(new CondominioRepository(new KondominiumContext()));
+            blocoService = new BlocoSaveService(new BlocoRepository(new KondominiumContext()));
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void CadastrarCondominium()
         {
             CondominioSaveCommand salvarCommand = new CondominioSaveCommand()
             {
@@ -34,6 +36,15 @@ namespace Kondominium.Test
             condominioService.Save(salvarCommand);
 
 
+        }
+
+
+        [TestMethod]
+        public void CadastrarBloco()
+        {
+            var salvarCommand = new BlocoSalvarCommnad("Torre Oeste", 1);
+
+            blocoService.Save(salvarCommand);
         }
     }
 }

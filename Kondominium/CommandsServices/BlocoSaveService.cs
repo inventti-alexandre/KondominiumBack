@@ -1,14 +1,12 @@
 ﻿using Kondominium.Domain.CommandsModels.Bloco;
 using Kondominium.Domain.Entities;
-using Kondominium.Domain.Interfaces.Commands;
 using Kondominium.Domain.Interfaces.Repositories;
 using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Kondominium.Domain.CommandsServices
 {
-    public class BlocoSaveService : ICommandSave<BlocoSaveCommnad>
+    public class BlocoSaveService 
     {
         private readonly IBlocoRepository _blocoRepository;
 
@@ -17,9 +15,10 @@ namespace Kondominium.Domain.CommandsServices
             _blocoRepository = blocoRepository;
         }
 
-        public void Save(BlocoSaveCommnad condimonioSaveCommand)
+        public void Save(BlocoSalvarCommnad condimonioSaveCommand)
         {
-            var bloco = new Bloco(condimonioSaveCommand.Nome, new Condominio() { Id = condimonioSaveCommand.IdCondominio });
+            var bloco = new Bloco(condimonioSaveCommand.Nome, condimonioSaveCommand.IdCondominio);
+            
             
             _blocoRepository.Save(bloco);
         }

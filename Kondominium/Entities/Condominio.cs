@@ -28,6 +28,8 @@ namespace Kondominium.Domain.Entities
             Estado = estado;
         }
 
+        
+
         public List<Bloco> Blocos { get; set; }
     }
 }

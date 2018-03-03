@@ -1,12 +1,12 @@
 ﻿
 using Kondominium.Domain.CommandsModels.Apartamento;
 using Kondominium.Domain.Entities;
-using Kondominium.Domain.Interfaces.Commands;
+
 using Kondominium.Domain.Interfaces.Repositories;
 
 namespace Kondominium.Domain.CommandsServices
 {
-    public class ApartamentoSaveService : ICommandSave<ApartarmentoSaveCommnad>
+    public class ApartamentoSaveService 
     {
         private readonly IApartamentoRepository _repository;
 
