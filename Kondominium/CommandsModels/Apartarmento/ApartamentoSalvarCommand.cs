@@ -1,20 +1,25 @@
-﻿using System;
+﻿using Kondominium.Domain.CommandsModels.Usuario;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Kondominium.Domain.CommandsModels.Apartamento
 {
-    public class ApartarmentoSaveCommnad
+    public class ApartamentoSalvarCommand : Notification.Notifications
     {
-        public string Nome { get; set; }
+        public int Id { get; set; }
+        public string Numero { get; set; }
         public int IdBloco { get; set; }
-        public int IdUsuario { get; internal set; }
-
-        public ApartarmentoSaveCommnad(string nome, int idBloco)
+        public List<UsuarioSalvarCommand> Usuarios { get; internal set; }
+        
+        public ApartamentoSalvarCommand(string nome, int idBloco, List<UsuarioSalvarCommand> usuarios)
         {
-            Nome = nome;
+            Numero = nome;
             IdBloco = idBloco;
-
+            Usuarios = usuarios;
         }
+
+       
     }
 }

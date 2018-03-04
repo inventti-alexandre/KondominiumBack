@@ -18,22 +18,44 @@ namespace Kondominium.API.Controllers
         }
 
         [HttpGet]
-        [Route("ListarCondominio")]
+        [Route("Listar")]
         [AllowAnonymous]
-        public IActionResult ListarCondominio()
+        public IActionResult Listar()
         {
-            return Ok(_condominioListService.List());
+            return Ok(_condominioListService.Listar());
         }
 
         [HttpPost]
-        [Route("SalvarCondominio")]
+        [Route("Salvar")]
         [AllowAnonymous]
-        public IActionResult SalvarCondominio([FromBody]CondominioSaveCommand condominioSaveCommand)
+        public IActionResult Salvar([FromBody]CondominioSaveCommand condominioSaveCommand)
         {
-            condominioSaveCommand = _condominioSaveService.Save(condominioSaveCommand);
+            condominioSaveCommand = _condominioSaveService.Salvar(condominioSaveCommand);
 
             return Response(condominioSaveCommand, condominioSaveCommand.GetNotifications());
             
+        }
+
+        [HttpPost]
+        [Route("Deletar")]
+        [AllowAnonymous]
+        public IActionResult Deletar(int idCondominio)
+        {
+            var condominioSaveCommand = _condominioSaveService.Excluir(idCondominio);
+
+            return Response(condominioSaveCommand, condominioSaveCommand.GetNotifications());
+
+        }
+
+        [HttpGet]
+        [Route("Recuperar")]
+        [AllowAnonymous]
+        public IActionResult Recuperar(int idCondominio)
+        {
+            var condominioResultCommand = _condominioListService.Get(idCondominio);
+
+            return Ok(condominioResultCommand);
+
         }
     }
 }

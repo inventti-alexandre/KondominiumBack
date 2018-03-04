@@ -3,6 +3,7 @@ using Kondominium.Domain.CommandsModels.Apartamento;
 using Kondominium.Domain.Entities;
 
 using Kondominium.Domain.Interfaces.Repositories;
+using System.Collections.Generic;
 
 namespace Kondominium.Domain.CommandsServices
 {
@@ -15,11 +16,18 @@ namespace Kondominium.Domain.CommandsServices
             _repository = repository;
         }
 
-        public void Save(ApartarmentoSaveCommnad saveCommand)
-        {
-            var apartamento = new Apartamento(saveCommand.Nome, new Bloco() { Id = saveCommand.IdBloco }, new Usuario() { Id = saveCommand.IdUsuario });
+        public ApartamentoSalvarCommand Salvar(ApartamentoSalvarCommand apartamentoCommand)
+        {           
+            var apartamento = new Apartamento(apartamentoCommand.Numero, apartamentoCommand.IdBloco);
 
-            _repository.Save(apartamento);
+            if (apartamento.Valido())
+            {
+                _repository.Salvar(apartamento);
+                apartamentoCommand.Id = apartamento.Id;
+            }
+            apartamentoCommand.AddNotification(apartamento.GetNotifications());
+
+            return apartamentoCommand;
         }
     }
 }

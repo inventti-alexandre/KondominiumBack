@@ -7,6 +7,8 @@ namespace Kondominium.Domain.Interfaces.Repositories
 {
     public interface IApartamentoRepository : IRepositoryBase<Apartamento>
     {
-        void Save(Apartamento apartamento);
+        void Salvar(Apartamento apartamento);
+        IEnumerable<Apartamento> ListarPorBloco(int idBloco);
+        IEnumerable<Apartamento> ListarPorCondominio(int idCondomonio);
     }
 }

@@ -22,28 +22,28 @@ namespace Kondominium.RepositoryBase.Repositories
             uow = new Uow(_kondominiumContext);
         }
 
-        public void Delete(int id)
+        public void Excluir(int id)
         {
             throw new NotImplementedException();
         }
 
-        public T GetById(int id)
+        public T RecuperarPorId(int id)
         {
             return DbSet.Find(id);
         }
 
-        public IQueryable<T> List()
+        public IQueryable<T> Listar()
         {
             return DbSet;
         }
 
-        public void Insert(T t)
+        public void Inserir(T t)
         {
             DbSet.Add(t);
             uow.Commit();
         }
 
-        public void Update(T t)
+        public void Atualizar(T t)
         {
             DbSet.Update(t);
             uow.Commit();

@@ -27,9 +27,26 @@ namespace Kondominium.Domain.Entities
             Cidade = cidade;
             Estado = estado;
         }
-
         
+        public virtual ICollection<Usuario> Usuarios { get; set; }
+        public virtual ICollection<Bloco> Blocos { get; set; }
 
-        public List<Bloco> Blocos { get; set; }
+        public bool Valido()
+        {
+            if (string.IsNullOrEmpty(Nome))
+                AddNotification("Nome Vazio.");
+
+            if (string.IsNullOrEmpty(Rua))
+                AddNotification("Rua Vazia.");
+
+            if (string.IsNullOrEmpty(CEP))
+                AddNotification("CEP Vazio.");
+
+            if (string.IsNullOrEmpty(Complemento))
+                AddNotification("Complemento Vazio.");
+
+            return IsValid();
+        }
+
     }
 }

@@ -4,24 +4,35 @@ namespace Kondominium.Domain.Notification
 {
     public class Notifications
     {
-        private List<string> notifications;
+        private List<string> _notifications;
 
         public void AddNotification(string message)
         {
             Initialize();
-            notifications.Add(message);
+            _notifications.Add(message);
+        }
+
+        public void AddNotification(List<string> notifications)
+        {
+            Initialize();
+            _notifications.AddRange(notifications);
         }
 
         public List<string> GetNotifications()
         {
             Initialize();
-            return notifications;
+            return _notifications;
         }
 
         private void Initialize()
         {
-            if (notifications == null)
-                notifications = new List<string>();
+            if (_notifications == null)
+                _notifications = new List<string>();
+        }
+
+        public bool IsValid()
+        {
+            return _notifications.Count == 0;
         }
     }
 }

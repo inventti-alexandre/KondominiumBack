@@ -4,6 +4,6 @@ namespace Kondominium.Domain.Interfaces.Repositories
 {
     public interface ICondominioRepository : IRepositoryBase<Condominio>
     {
-        void Save(Condominio condominio);
+        void Salvar(Condominio condominio);
     }
 }

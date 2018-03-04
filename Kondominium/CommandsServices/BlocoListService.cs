@@ -17,9 +17,9 @@ namespace Kondominium.Domain.CommandsServices
             _BlocoRepository = BlocoRepository;
         }
 
-        public List<BlocoListarCommand> List()
+        public List<BlocoListarCommand> Listar()
         {
-            var Blocos = _BlocoRepository.List();
+            var Blocos = _BlocoRepository.Listar();
 
             return null;
         }

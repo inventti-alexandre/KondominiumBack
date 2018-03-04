@@ -33,7 +33,7 @@ namespace Kondominium.Test
                 Rua = "Teste"
             };
 
-            condominioService.Save(salvarCommand);
+            condominioService.Salvar(salvarCommand);
 
 
         }
@@ -44,7 +44,7 @@ namespace Kondominium.Test
         {
             var salvarCommand = new BlocoSalvarCommnad("Torre Oeste", 1);
 
-            blocoService.Save(salvarCommand);
+            blocoService.Salvar(salvarCommand);
         }
     }
 }

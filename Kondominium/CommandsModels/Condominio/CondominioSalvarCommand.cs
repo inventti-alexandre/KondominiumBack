@@ -13,22 +13,5 @@ namespace Kondominium.Domain.CommandsModels.Condominio
         public string Complemento { get; set; }
         public int Cidade { get; set; }
         public int Estado { get; set; }
-
-        public bool Valido()
-        {
-            if (string.IsNullOrEmpty(Nome))
-                AddNotification("Nome Vazio.");
-
-            if (string.IsNullOrEmpty(Rua))
-                AddNotification("Rua Vazia.");
-
-            if (string.IsNullOrEmpty(CEP))
-                AddNotification("CEP Vazio.");
-
-            if (string.IsNullOrEmpty(Complemento))
-                AddNotification("Complemento Vazio.");
-
-            return GetNotifications().Count == 0;
-        }
     }
 }

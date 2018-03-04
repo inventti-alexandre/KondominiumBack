@@ -13,15 +13,15 @@ namespace Kondominium.RepositoryBase.Repositories
         {
         }
 
-        public void Save(Condominio condominio)
+        public void Salvar(Condominio condominio)
         {
             if (condominio.Id == 0)
             {
-                Insert(condominio);
+                Inserir(condominio);
             }
             else
             {
-                Update(condominio);
+                Atualizar(condominio);
             }
         }
     }

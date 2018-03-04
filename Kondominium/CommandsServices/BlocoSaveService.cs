@@ -15,12 +15,12 @@ namespace Kondominium.Domain.CommandsServices
             _blocoRepository = blocoRepository;
         }
 
-        public void Save(BlocoSalvarCommnad condimonioSaveCommand)
+        public void Salvar(BlocoSalvarCommnad condimonioSaveCommand)
         {
             var bloco = new Bloco(condimonioSaveCommand.Nome, condimonioSaveCommand.IdCondominio);
             
             
-            _blocoRepository.Save(bloco);
+            _blocoRepository.Salvar(bloco);
         }
     }
 }

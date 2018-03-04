@@ -3,6 +3,7 @@ using Kondominium.Domain.Interfaces.Repositories;
 using Kondominium.RepositoryBase.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Kondominium.RepositoryBase.Repositories
@@ -13,15 +14,25 @@ namespace Kondominium.RepositoryBase.Repositories
         {
         }
 
-        public void Save(Apartamento apartamento)
+        public IEnumerable<Apartamento> ListarPorBloco(int idBloco)
+        {
+            return DbSet.Where(x => x.BlocoId == idBloco);
+        }
+
+        public IEnumerable<Apartamento> ListarPorCondominio(int idCondominio)
+        {
+            return DbSet.Where(x => x.Bloco.CondominioId == idCondominio);
+        }
+
+        public void Salvar(Apartamento apartamento)
         {
             if (apartamento.Id == 0)
             {
-                Insert(apartamento);
+                Inserir(apartamento);
             }
             else
             {
-                Update(apartamento);
+                Atualizar(apartamento);
             }
         }
     }

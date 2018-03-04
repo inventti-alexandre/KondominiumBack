@@ -5,10 +5,10 @@ namespace Kondominium.Domain.Interfaces.Repositories
 {
     public interface IRepositoryBase <T>
     {
-        void Insert(T t);
-        void Update(T t);
-        T GetById(int id);
-        IQueryable<T> List();
-        void Delete(int id);
+        void Inserir(T t);
+        void Atualizar(T t);
+        T RecuperarPorId(int id);
+        IQueryable<T> Listar();
+        void Excluir(int id);
     }
 }

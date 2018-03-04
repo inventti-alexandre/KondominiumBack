@@ -7,6 +7,6 @@ namespace Kondominium.Domain.Interfaces.Repositories
 {
     public interface IBlocoRepository : IRepositoryBase<Bloco>
     {
-        void Save(Bloco bloco);
+        void Salvar(Bloco bloco);
     }
 }

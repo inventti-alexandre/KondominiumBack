@@ -13,15 +13,15 @@ namespace Kondominium.RepositoryBase.Repositories
         {
         }
 
-        public void Save(Bloco bloco)
+        public void Salvar(Bloco bloco)
         {
             if (bloco.Id == 0)
             {
-                Insert(bloco);
+                Inserir(bloco);
             }
             else
             {
-                Update(bloco);
+                Atualizar(bloco);
             }
         }
     }

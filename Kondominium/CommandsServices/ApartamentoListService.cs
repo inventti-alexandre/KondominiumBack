@@ -16,9 +16,27 @@ namespace Kondominium.Domain.CommandsServices
             _apartamentoRepository = apartamentoRepository;
         }
 
-        public List<ApartamentoListarCommand> List()
+        public List<ApartamentoListarCommand> Listar()
         {
-            var apartamentos = _apartamentoRepository.List();
+            var apartamentos = _apartamentoRepository.Listar();
+
+            var apartamentoListarCommand = apartamentos.Select(x => new ApartamentoListarCommand(x.Numero, x.Bloco.Nome)).ToList();
+
+            return apartamentoListarCommand;
+        }
+
+        public List<ApartamentoListarCommand> ListarPorCondominio(int idCondominio)
+        {
+            var apartamentos = _apartamentoRepository.ListarPorCondominio(idCondominio);
+
+            var apartamentoListarCommand = apartamentos.Select(x => new ApartamentoListarCommand(x.Numero, x.Bloco.Nome)).ToList();
+
+            return apartamentoListarCommand;
+        }
+
+        public List<ApartamentoListarCommand> ListarPorBloco(int idBloco)
+        {
+            var apartamentos = _apartamentoRepository.ListarPorBloco(idBloco);
 
             var apartamentoListarCommand = apartamentos.Select(x => new ApartamentoListarCommand(x.Numero, x.Bloco.Nome)).ToList();
 
